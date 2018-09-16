@@ -26,21 +26,13 @@
                 <div class="card card-profile shadow mt--500">
                     <div class="px-4">
                         <div class="row justify-content-center">
-                            <div class="col-lg-7 order-lg-2">
+                            <div class="text-center order-lg-2">
                                 @isset($dataBubble)
-                                <h3>{{ $dataBubble->bubble_type_slug }}</h3>
-                                    @endisset
+                                    {{--                                    @dd($dataBubble->type)--}}
+                                    <h3>{{ $dataBubble->type->name }}</h3>
+                                @endisset
                             </div>
-                            <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">
-                                <div class="card-profile-actions py-4 mt-lg-0">
-                                    @isset($dataBubble)
-                                        <a href="{{ $dataBubble->jupyter_url }}" target="_blank"
-                                           class="btn btn-sm btn-info mr-4">Jupyter</a>
-                                        <a href="{{ $dataBubble->nteract_url }}" target="_blank"
-                                           class="btn btn-sm btn-default float-right">nteract</a>
-                                    @endisset
-                                </div>
-                            </div>
+
                             @if(request()->user()->bubbles->count() === 0)
                                 <div class="row justify-content-center">
                                     <div class="col-lg-12">
@@ -155,36 +147,51 @@
                             @endif
                         </div>
                         <div class="text-center mt-5">
+                            @isset($dataBubble)
                             <div class="container">
-                                <form method="post" action="{{ route('workspace.files') }}"
-                                      enctype="multipart/form-data" id="">
-                                    @csrf
+                                {{--containerTODO put buttons here--}}
+                                <div class="row">
+                                    <div class="col-6">
+                                            <a href="{{ $dataBubble->nteract_url }}" target="_blank"
+                                               style="height: 45px; width: 200px; padding-top: 15px"
+                                               class="btn btn-sm btn-default float-right">nteract</a>
+                                    </div>
 
-                                    <label class="btn btn-outline-success" for="upload">
+                                    <div class="col-6">
+                                            <a href="{{ $dataBubble->jupyter_url }}" target="_blank"
+                                               style="height: 45px; width: 200px; padding-top: 15px"
+                                               class="btn btn-sm btn-info mr-4">Jupyter</a>
+                                    </div>
+                                </div>
 
-                                        <input id="upload" type="file" class="form-control-file" name="workspace_file"/>
-                                        Upload
-                                    </label>
-
-
-                                    <br>
-                                    <button class="btn btn-clipboard">Upload File</button>
-
-                                </form>
                             </div>
+                            @endisset
 
                             {{--@isset($dataBubble)--}}
-                                {{--<iframe src="{{ $dataBubble->jupyter_url }}" frameborder="0"></iframe>--}}
+                            {{--<iframe src="{{ $dataBubble->jupyter_url }}" frameborder="0"></iframe>--}}
                             {{--@endisset--}}
 
                         </div>
                         <div class="mt-5 py-5 border-top text-center">
                             <div class="row justify-content-center">
                                 <div class="col-lg-9">
-                                    <p>An artist of considerable range, Ryan — the name taken by Melbourne-raised,
-                                        Brooklyn-based Nick Murphy — writes, performs and records all of his own music,
-                                        giving it a warm, intimate feel with a solid groove structure. An artist of
-                                        considerable range.</p>
+                                    <form method="post" action="{{ route('workspace.files') }}"
+                                          enctype="multipart/form-data" id="">
+                                        @csrf
+
+                                        <label class="btn btn-outline-success" for="upload">
+
+                                            <input hidden id="upload" type="file" class="form-control-file" name="workspace_file"/>
+                                            Select Files
+                                        </label>
+                                        <br>
+                                        <button class="btn btn-clipboard">Upload File</button>
+
+                                    </form>
+                                    {{--<p>An artist of considerable range, Ryan — the name taken by Melbourne-raised,--}}
+                                    {{--Brooklyn-based Nick Murphy — writes, performs and records all of his own music,--}}
+                                    {{--giving it a warm, intimate feel with a solid groove structure. An artist of--}}
+                                    {{--considerable range.</p>--}}
                                     <a href="#">Show more</a>
                                 </div>
                             </div>
