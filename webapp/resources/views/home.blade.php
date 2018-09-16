@@ -41,7 +41,7 @@
                                                 <div class="card card-lift--hover shadow border-0">
                                                     <div class="card-body py-5">
                                                         <div
-                                                            class="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                                                                class="icon icon-shape icon-shape-primary rounded-circle mb-4">
                                                             <i class="ni ni-check-bold"></i>
                                                         </div>
                                                         <h6 class="text-primary text-uppercase">Natural Language
@@ -56,7 +56,7 @@
                                                             <span class="badge badge-pill badge-primary">spacy</span>
                                                             <span class="badge badge-pill badge-primary">nltk</span>
                                                             <span
-                                                                class="badge badge-pill badge-primary">scikit learn</span>
+                                                                    class="badge badge-pill badge-primary">scikit learn</span>
                                                         </div>
                                                         <form action="{{ route('workspace.create') }}" method="post">
                                                             @csrf
@@ -72,7 +72,7 @@
                                                 <div class="card card-lift--hover shadow border-0">
                                                     <div class="card-body py-5">
                                                         <div
-                                                            class="icon icon-shape icon-shape-success rounded-circle mb-4">
+                                                                class="icon icon-shape icon-shape-success rounded-circle mb-4">
                                                             <i class="ni ni-istanbul"></i>
                                                         </div>
                                                         <h6 class="text-success text-uppercase">Machine Learning</h6>
@@ -84,7 +84,7 @@
                                                         <div>
                                                             <span class="badge badge-pill badge-success">Keras</span>
                                                             <span
-                                                                class="badge badge-pill badge-success">TensorFlow</span>
+                                                                    class="badge badge-pill badge-success">TensorFlow</span>
                                                             <span class="badge badge-pill badge-success">Theano</span>
                                                         </div>
                                                         <form action="{{ route('workspace.create') }}" method="post">
@@ -101,7 +101,7 @@
                                                 <div class="card card-lift--hover shadow border-0">
                                                     <div class="card-body py-5">
                                                         <div
-                                                            class="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                                                                class="icon icon-shape icon-shape-warning rounded-circle mb-4">
                                                             <i class="ni ni-planet"></i>
                                                         </div>
                                                         <h6 class="text-warning text-uppercase">Data Mining</h6>
@@ -112,7 +112,7 @@
                                                             features.</p>
                                                         <div>
                                                             <span
-                                                                class="badge badge-pill badge-warning">marketing</span>
+                                                                    class="badge badge-pill badge-warning">marketing</span>
                                                             <span class="badge badge-pill badge-warning">product</span>
                                                             <span class="badge badge-pill badge-warning">launch</span>
                                                         </div>
@@ -137,7 +137,7 @@
                                             <select name="bubble_type" class="form-control" id="">
                                                 @foreach($bubbleTypes as $bubbleType)
                                                     <option
-                                                        value="{{ $bubbleType->slug }}">{{ $bubbleType->name }}</option>
+                                                            value="{{ $bubbleType->slug }}">{{ $bubbleType->name }}</option>
                                                 @endforeach
                                             </select>
                                             <button class="btn btn-primary">Create Bubble</button>
@@ -185,13 +185,19 @@
                                             Select Files
                                         </label>
                                         <br>
-                                        <button class="btn btn-clipboard">Upload File</button>
+                                        {{--<button class="btn btn-clipboard">Upload File</button>--}}
 
-                                    </form>
-                                    {{--<p>An artist of considerable range, Ryan — the name taken by Melbourne-raised,--}}
-                                    {{--Brooklyn-based Nick Murphy — writes, performs and records all of his own music,--}}
-                                    {{--giving it a warm, intimate feel with a solid groove structure. An artist of--}}
-                                    {{--considerable range.</p>--}}
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class="mt-5 py-5 border-top text-center">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-9">
+                                    <p>An artist of considerable range, Ryan — the name taken by Melbourne-raised,
+                                        Brooklyn-based Nick Murphy — writes, performs and records all of his own music,
+                                        giving it a warm, intimate feel with a solid groove structure. An artist of
+                                        considerable range.</p>
                                     <a href="#">Show more</a>
                                 </div>
                             </div>
