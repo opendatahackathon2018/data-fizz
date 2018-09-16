@@ -129,21 +129,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 order-lg-1">
-                                    <div class="card-profile-stats d-flex justify-content-center">
-
-                                        <form action="{{ route('workspace.create') }}" method="post">
-                                            @csrf
-                                            <select name="bubble_type" class="form-control" id="">
-                                                @foreach($bubbleTypes as $bubbleType)
-                                                    <option
-                                                            value="{{ $bubbleType->slug }}">{{ $bubbleType->name }}</option>
-                                                @endforeach
-                                            </select>
-                                            <button class="btn btn-primary">Create Bubble</button>
-                                        </form>
-                                    </div>
-                                </div>
                             @endif
                         </div>
                         <div class="text-center mt-5">
@@ -191,17 +176,7 @@
                             </div>
 
                         </div>
-                        <div class="mt-5 py-5 border-top text-center">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-9">
-                                    <p>An artist of considerable range, Ryan — the name taken by Melbourne-raised,
-                                        Brooklyn-based Nick Murphy — writes, performs and records all of his own music,
-                                        giving it a warm, intimate feel with a solid groove structure. An artist of
-                                        considerable range.</p>
-                                    <a href="#">Show more</a>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
