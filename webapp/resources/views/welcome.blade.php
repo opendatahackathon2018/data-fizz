@@ -73,11 +73,9 @@
                                             <span class="badge badge-pill badge-primary">nltk</span>
                                             <span class="badge badge-pill badge-primary">scikit learn</span>
                                         </div>
-                                        <form action="{{ route('workspace.create') }}" method="post">
-                                            <input type="text" hidden name="bubble_type" value="natural-language-processing">
-                                            <button class="btn btn-warning  mt-4">Create Bubble</button>
-                                        </form>
-                                        {{--<a href="#" class="btn btn-primary mt-4">Create Bubble</a>--}}
+
+
+                                        <a href="{{route('home')}}" class="btn btn-primary mt-4">Data Bubble</a>
                                     </div>
                                 </div>
                             </div>
@@ -94,10 +92,8 @@
                                             <span class="badge badge-pill badge-success">TensorFlow</span>
                                             <span class="badge badge-pill badge-success">Theano</span>
                                         </div>
-                                        <form action="{{ route('workspace.create') }}" method="post">
-                                            <input type="text" hidden name="bubble_type" value="machine-learning">
-                                            <button class="btn btn-warning  mt-4">Create Bubble</button>
-                                        </form>
+
+                                        <a href="{{route('home')}}" class="btn btn-primary mt-4">Data Bubble</a>
                                         {{--<a href="#" class="btn btn-success mt-4">Create Bubble</a>--}}
                                     </div>
                                 </div>
@@ -109,16 +105,15 @@
                                             <i class="ni ni-planet"></i>
                                         </div>
                                         <h6 class="text-warning text-uppercase">Data Mining</h6>
-                                        <p class="description mt-3">Create a Data Mining Bubble to start mining data from the web immediately!</p>
+                                        <p class="description mt-3">Create a Data Mining Bubble to start mining data
+                                            from the web immediately!</p>
                                         <div>
                                             <span class="badge badge-pill badge-warning">Scrapy</span>
                                             <span class="badge badge-pill badge-warning">Statsmodels</span>
                                             <span class="badge badge-pill badge-warning">BeautifulSoup</span>
                                         </div>
-                                        <form action="{{ route('workspace.create') }}" method="post">
-                                            <input type="text" hidden name="bubble_type" value="data-mining">
-                                            <button class="btn btn-warning  mt-4">Create Bubble</button>
-                                        </form>
+
+                                        <a href="{{route('home')}}" class="btn btn-primary mt-4">Data Bubble</a>
                                         {{--<a href="#" class="btn btn-warning mt-4">Create Bubble</a>--}}
                                     </div>
                                 </div>
@@ -150,7 +145,8 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <h6 class="mb-0">Seamless access to Open Data through our Python library</h6>
+                                            <h6 class="mb-0">Seamless access to Open Data through our Python
+                                                library</h6>
                                         </div>
                                     </div>
                                 </li>
@@ -162,7 +158,8 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <h6 class="mb-0">Create a cloud environment containing all the packages you need in a click</h6>
+                                            <h6 class="mb-0">Create a cloud environment containing all the packages you
+                                                need in a click</h6>
                                         </div>
                                     </div>
                                 </li>
@@ -186,7 +183,8 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <h6 class="mb-0">Seamlessly synchronise your local environment with your Data Bubble</h6>
+                                            <h6 class="mb-0">Seamlessly synchronise your local environment with your
+                                                Data Bubble</h6>
                                         </div>
                                     </div>
                                 </li>
@@ -197,43 +195,43 @@
             </div>
         </section>
         {{--<section class="section bg-secondary">--}}
-            {{--<div class="container">--}}
-                {{--<div class="row row-grid align-items-center">--}}
-                    {{--<div class="col-md-6">--}}
-                        {{--<div class="card bg-default shadow border-0">--}}
-                            {{--<img src="{{ asset('img/theme/img-1-1200x1000.jpg')}}" class="card-img-top">--}}
-                            {{--<blockquote class="card-blockquote">--}}
-                                {{--<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"--}}
-                                     {{--class="svg-bg">--}}
-                                    {{--<polygon points="0,52 583,95 0,95" class="fill-default"/>--}}
-                                    {{--<polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default"/>--}}
-                                {{--</svg>--}}
-                                {{--<h4 class="display-3 font-weight-bold text-white">Artificial Intelligence</h4>--}}
-                                {{--<p class="lead text-italic text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet hic quae quos sit vitae voluptatem voluptatibus. At, laboriosam, repellat! Aliquam et iusto libero nulla. Cumque cupiditate quis quos tenetur voluptate?</p>--}}
-                            {{--</blockquote>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                    {{--<div class="col-md-6">--}}
-                        {{--<div class="pl-md-5">--}}
-                            {{--<div class="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">--}}
-                                {{--<i class="ni ni-settings"></i>--}}
-                            {{--</div>--}}
-                            {{--<h3>Our customers</h3>--}}
-                            {{--<p class="lead">Don't let your uses guess by attaching tooltips and popoves to any element.--}}
-                                {{--Just--}}
-                                {{--make sure you enable them first via JavaScript.</p>--}}
-                            {{--<p>The kit comes with three pre-built pages to help you get started faster. You can change--}}
-                                {{--the--}}
-                                {{--text and images and you're good to go.</p>--}}
-                            {{--<p>The kit comes with three pre-built pages to help you get started faster. You can change--}}
-                                {{--the--}}
-                                {{--text and images and you're good to go.</p>--}}
-                            {{--<a href="#" class="font-weight-bold text-warning mt-5">A beautiful UI Kit for impactful--}}
-                                {{--websites</a>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
+        {{--<div class="container">--}}
+        {{--<div class="row row-grid align-items-center">--}}
+        {{--<div class="col-md-6">--}}
+        {{--<div class="card bg-default shadow border-0">--}}
+        {{--<img src="{{ asset('img/theme/img-1-1200x1000.jpg')}}" class="card-img-top">--}}
+        {{--<blockquote class="card-blockquote">--}}
+        {{--<svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"--}}
+        {{--class="svg-bg">--}}
+        {{--<polygon points="0,52 583,95 0,95" class="fill-default"/>--}}
+        {{--<polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default"/>--}}
+        {{--</svg>--}}
+        {{--<h4 class="display-3 font-weight-bold text-white">Artificial Intelligence</h4>--}}
+        {{--<p class="lead text-italic text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet hic quae quos sit vitae voluptatem voluptatibus. At, laboriosam, repellat! Aliquam et iusto libero nulla. Cumque cupiditate quis quos tenetur voluptate?</p>--}}
+        {{--</blockquote>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="col-md-6">--}}
+        {{--<div class="pl-md-5">--}}
+        {{--<div class="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">--}}
+        {{--<i class="ni ni-settings"></i>--}}
+        {{--</div>--}}
+        {{--<h3>Our customers</h3>--}}
+        {{--<p class="lead">Don't let your uses guess by attaching tooltips and popoves to any element.--}}
+        {{--Just--}}
+        {{--make sure you enable them first via JavaScript.</p>--}}
+        {{--<p>The kit comes with three pre-built pages to help you get started faster. You can change--}}
+        {{--the--}}
+        {{--text and images and you're good to go.</p>--}}
+        {{--<p>The kit comes with three pre-built pages to help you get started faster. You can change--}}
+        {{--the--}}
+        {{--text and images and you're good to go.</p>--}}
+        {{--<a href="#" class="font-weight-bold text-warning mt-5">A beautiful UI Kit for impactful--}}
+        {{--websites</a>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--</div>--}}
         {{--</section>--}}
         <section class="section pb-0 bg-gradient-warning">
             <div class="container">
@@ -266,7 +264,8 @@
                                     </div>
                                     <div class="pl-4">
                                         <h5 class="title text-success">Free Bubble</h5>
-                                        <p>A single cloud environment suitable students and tinkerers that are getting started.</p>
+                                        <p>A single cloud environment suitable students and tinkerers that are getting
+                                            started.</p>
                                         <ul class="list-unstyled mt-5">
                                             <li class="py-2">
                                                 <div class="d-flex align-items-center">
@@ -276,7 +275,8 @@
                                                         </div>
                                                     </div>
                                                     <div>
-                                                        <h6 class="mb-0">DataFizz Library to easily Access Government and other Open Data</h6>
+                                                        <h6 class="mb-0">DataFizz Library to easily Access Government
+                                                            and other Open Data</h6>
                                                     </div>
                                                 </div>
                                             </li>
@@ -288,7 +288,8 @@
                                                         </div>
                                                     </div>
                                                     <div>
-                                                        <h6 class="mb-0">Prebuild Datascience Enviroment spin up one in a single click
+                                                        <h6 class="mb-0">Prebuild Datascience Enviroment spin up one in
+                                                            a single click
                                                         </h6>
                                                     </div>
                                                 </div>
@@ -301,7 +302,8 @@
                                                         </div>
                                                     </div>
                                                     <div>
-                                                        <h6 class="mb-0">Github access to enable you to clone or publish your work
+                                                        <h6 class="mb-0">Github access to enable you to clone or publish
+                                                            your work
                                                         </h6>
                                                     </div>
                                                 </div>
@@ -332,7 +334,8 @@
                                                         </div>
                                                     </div>
                                                     <div>
-                                                        <h6 class="mb-0">Create multiple Data Bubbles to handle the heavy payloads</h6>
+                                                        <h6 class="mb-0">Create multiple Data Bubbles to handle the
+                                                            heavy payloads</h6>
                                                     </div>
                                                 </div>
                                             </li>
@@ -389,28 +392,28 @@
                 </div>
                 <div class="row ">
                     {{--<div class="col-md-6 col-lg-3 mb-5 mb-lg-0">--}}
-                        {{--<div class="px-4">--}}
-                            {{--<img src="{{ asset('img/theme/team-1-800x800.jpg')}}"--}}
-                                 {{--class="rounded-circle img-center img-fluid shadow shadow-lg--hover"--}}
-                                 {{--style="width: 200px;">--}}
-                            {{--<div class="pt-4 text-center">--}}
-                                {{--<h5 class="title">--}}
-                                    {{--<span class="d-block mb-1">Ryan Tompson</span>--}}
-                                    {{--<small class="h6 text-muted">Web Developer</small>--}}
-                                {{--</h5>--}}
-                                {{--<div class="mt-3">--}}
-                                    {{--<a href="#" class="btn btn-warning btn-icon-only rounded-circle">--}}
-                                        {{--<i class="fa fa-twitter"></i>--}}
-                                    {{--</a>--}}
-                                    {{--<a href="#" class="btn btn-warning btn-icon-only rounded-circle">--}}
-                                        {{--<i class="fa fa-facebook"></i>--}}
-                                    {{--</a>--}}
-                                    {{--<a href="#" class="btn btn-warning btn-icon-only rounded-circle">--}}
-                                        {{--<i class="fa fa-dribbble"></i>--}}
-                                    {{--</a>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
+                    {{--<div class="px-4">--}}
+                    {{--<img src="{{ asset('img/theme/team-1-800x800.jpg')}}"--}}
+                    {{--class="rounded-circle img-center img-fluid shadow shadow-lg--hover"--}}
+                    {{--style="width: 200px;">--}}
+                    {{--<div class="pt-4 text-center">--}}
+                    {{--<h5 class="title">--}}
+                    {{--<span class="d-block mb-1">Ryan Tompson</span>--}}
+                    {{--<small class="h6 text-muted">Web Developer</small>--}}
+                    {{--</h5>--}}
+                    {{--<div class="mt-3">--}}
+                    {{--<a href="#" class="btn btn-warning btn-icon-only rounded-circle">--}}
+                    {{--<i class="fa fa-twitter"></i>--}}
+                    {{--</a>--}}
+                    {{--<a href="#" class="btn btn-warning btn-icon-only rounded-circle">--}}
+                    {{--<i class="fa fa-facebook"></i>--}}
+                    {{--</a>--}}
+                    {{--<a href="#" class="btn btn-warning btn-icon-only rounded-circle">--}}
+                    {{--<i class="fa fa-dribbble"></i>--}}
+                    {{--</a>--}}
+                    {{--</div>--}}
+                    {{--</div>--}}
+                    {{--</div>--}}
                     {{--</div>--}}
                     <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                         <div class="px-4">
@@ -438,7 +441,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                         <div class="px-4">
-                            <img src="{{ asset('img/243651_465573720138011_236885618_o.jpg')}}"
+                            <img src="{{ asset('img/28070810_10204473573316443_6276484572252043628_o.jpg')}}"
                                  class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
                                  style="width: 200px;">
                             <div class="pt-4 text-center">
@@ -494,7 +497,9 @@
                         <div class="row align-items-center">
                             <div class="col-lg-8">
                                 <h3 class="text-white">We made Data Science easier for you.</h3>
-                                <p class="lead text-white mt-3">Have an easier time working by being offered instantaneous development through our cloud environments and seamless access to Open Data.</p>
+                                <p class="lead text-white mt-3">Have an easier time working by being offered
+                                    instantaneous development through our cloud environments and seamless access to Open
+                                    Data.</p>
                             </div>
                             <div class="col-lg-3 ml-lg-auto">
                                 <a href="https://www.creative-tim.com/product/argon-design-system"
